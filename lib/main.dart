@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
 
   // Deleting a product by id
   Future<void> _deleteProduct(String carsId) async {
-    //await _cars.doc(carsId).delete();
+    await _cars.doc(carsId).delete();
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text('You have successfully deleted a product'),
